@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/celestrak",
+  "title": "Celestrak",
+  "description": "CelesTrak MCP — satellite orbital elements (TLE / GP data) for any tracked object.",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/celestrak",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-celestrak",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/celestrak/mcp"
+    }
+  ]
+}

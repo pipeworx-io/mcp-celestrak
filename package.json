@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-celestrak",
+  "version": "0.1.0",
+  "description": "CelesTrak MCP — satellite orbital elements (TLE / GP data) for any tracked object.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "celestrak"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-celestrak"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
