@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-celestrak",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CelesTrak MCP — satellite orbital elements (TLE / GP data) for any tracked object.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-68ba3eca5ffe3e2610e1e724e8a4754a5ee0f39b3bc2f73cfff554aff0ba4719",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-7999a4f2bfdd8a78bfe9f8a3e7893962e8f903507a63bfc27e19c3724d0c7ad9",
+    "sourceCommit": "babdd280d475dceddecc9ebf8f2a661712781a81"
   }
 }
