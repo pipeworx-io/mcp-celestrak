@@ -1,0 +1,50 @@
+[
+  {
+    "name": "get_satellite",
+    "description": "Get satellite orbital elements (TLE / GP data) for a single object by NORAD catalog ID. Returns orbital parameters: inclination, eccentricity, mean motion, RAAN, argument of perigee, epoch, and derived orbital period in minutes. norad_id 25544 = ISS, 20580 = Hubble. This is the orbital catalog, not live position tracking.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "norad_id": {
+          "type": "number",
+          "description": "NORAD catalog ID, e.g. 25544 (ISS) or 20580 (Hubble)."
+        }
+      },
+      "required": [
+        "norad_id"
+      ]
+    }
+  },
+  {
+    "name": "search_by_name",
+    "description": "Search the satellite catalog by name substring and return matching orbital elements (TLE / GP data). e.g. \"STARLINK\", \"NOAA\", \"GPS\". Returns up to 50 matches with orbital parameters (inclination, eccentricity, period). Catalog/orbital data, not live tracking.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Satellite name substring, e.g. \"STARLINK\" or \"NOAA\"."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "get_group",
+    "description": "List orbital elements (TLE / GP data) for an entire CelesTrak group — e.g. the Starlink, GPS, or weather satellite catalog. Groups: \"stations\", \"starlink\", \"gps-ops\", \"weather\", \"science\", \"geo\", \"active\". Returns up to 100 satellites with orbital parameters (inclination, eccentricity, period). Catalog/orbital data, not live tracking.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "group": {
+          "type": "string",
+          "description": "A CelesTrak group, e.g. \"stations\", \"starlink\", \"gps-ops\", \"weather\", \"science\", \"geo\", \"active\"."
+        }
+      },
+      "required": [
+        "group"
+      ]
+    }
+  }
+]
